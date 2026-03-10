@@ -17,6 +17,7 @@ function App() {
     if (editId) {
       const updated = students.map((s) =>
         s.id === editId ? { ...s, name, email, age } : s
+      
       );
       setStudents(updated);
       setEditId(null);
